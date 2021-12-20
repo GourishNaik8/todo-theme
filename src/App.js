@@ -11,6 +11,8 @@ const themeChange = () =>{
   
   if (img1.src.match("images/icon-moon.svg")  ) {
     img1.src = "images/icon-sun.svg";
+    document.body.style.backgroundImage="url('images/bg-desktop-dark.jpg')";
+    // document.querySelector("h1").style.color="black";
     document.body.style.backgroundImage="images/bg-desktop-dark.jpg";
     document.body.style.backgroundColor= '#25273c';
     document.body.querySelector('.todo-list-wrapper').style.boxShadow = "0 35px 50px rgb(0 0 0 / 50%)";
@@ -33,6 +35,8 @@ const themeChange = () =>{
 }
 else {
     img1.src = "images/icon-moon.svg";
+    document.body.style.backgroundImage="url('images/bg-desktop-light.jpg')";
+    document.querySelector("h1").style.color="white";
     document.body.style.backgroundColor='white';
     document.body.querySelector('.todo-list-wrapper').style.boxShadow = "0 35px 50px rgb(194 195 214 / 50%)";
     var x= document.getElementsByClassName('lists');
